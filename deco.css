@@ -1,0 +1,248 @@
+:root {
+  --azul: #1E90FF;
+  --celeste: #E8F4FF;
+  --azul-oscuro: #0A3D62;
+  --negro: #111;
+  --blanco: #fff;
+}
+
+/* Reglas generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--blanco);
+  color: var(--negro);
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+/* Contenedores */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Header */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: linear-gradient(135deg, var(--azul-oscuro), var(--azul));
+  color: var(--blanco);
+  padding: 15px 0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-img {
+  width: 80px;
+  border-radius: 12px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-list a {
+  color: var(--blanco);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-list a:hover {
+  color: var(--celeste);
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, var(--celeste), var(--blanco));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 20px;
+}
+
+.hero-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+}
+
+.hero-content {
+  flex: 1 1 400px;
+  text-align: left;
+}
+
+.hero-title {
+  font-size: 2.8rem;
+  color: var(--azul-oscuro);
+  margin-bottom: 15px;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+.hero-cta .btn {
+  margin-right: 10px;
+}
+
+/* Botones */
+.btn {
+  display: inline-block;
+  padding: 10px 25px;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background-color: var(--azul);
+  color: var(--blanco);
+}
+
+.btn-primary:hover {
+  background-color: var(--azul-oscuro);
+}
+
+.btn-ghost {
+  background-color: transparent;
+  color: var(--azul-oscuro);
+  border: 2px solid var(--azul-oscuro);
+}
+
+.btn-ghost:hover {
+  background-color: var(--azul-oscuro);
+  color: var(--blanco);
+}
+
+/* Secciones */
+.section {
+  padding: 80px 0;
+  background-color: var(--celeste);
+  margin-top: 40px;
+  border-radius: 12px;
+}
+
+.section:nth-child(even) {
+  background-color: var(--blanco);
+}
+
+.section h2 {
+  text-align: center;
+  color: var(--azul-oscuro);
+  margin-bottom: 30px;
+}
+
+/* Cards */
+.card {
+  background-color: var(--blanco);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Proyectos */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.project-card h3 {
+  color: var(--azul-oscuro);
+  margin: 15px 0 10px;
+}
+
+.btn-secondary {
+  background-color: var(--azul-oscuro);
+  color: var(--blanco);
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+.btn-secondary:hover {
+  background-color: var(--azul);
+}
+
+/* Footer */
+.site-footer {
+  background-color: var(--azul-oscuro);
+  color: var(--blanco);
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  margin-top: 60px;
+}
+
+.site-footer a {
+  color: var(--celeste);
+}
+
+/* Botón volver arriba */
+.back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: var(--azul);
+  color: var(--blanco);
+  border: none;
+  border-radius: 50%;
+  padding: 12px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: none;
+  transition: background-color 0.3s, transform 0.3s;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.section:last-of-type {
+  margin-bottom: 0;
+  padding-bottom: 40px; /* puedes ajustar o quitarlo si quieres más compacto */
+}
+
+.site-footer {
+  margin-top: 0;
+}
+.back-to-top:hover {
+  background-color: var(--azul-oscuro);
+  transform: scale(1.1);
+}
+section, header, footer {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
