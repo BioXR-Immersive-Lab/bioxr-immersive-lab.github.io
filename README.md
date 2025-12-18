@@ -55,14 +55,11 @@ Crear tecnologías inmersivas que resuelvan problemas reales en salud.
 Posicionar al Perú como líder regional en innovación biomédica inmersiva.
 
 ---
-
-## 🧪 Estructura del repositorio
+## 🧪 Estructura del proyecto
 
 ```text
-BioXR-Immersive-Lab/
-├── proyectos/
-├── docs/
-├── assets/
-├── web-demo/
-└── README.md
-
+/
+├── README.md        # Documentación del proyecto
+├── index.html       # Página principal del sitio web
+├── deco.css         # Estilos y diseño visual
+└── funciones.js     # Funciones JavaScript e interactividad
