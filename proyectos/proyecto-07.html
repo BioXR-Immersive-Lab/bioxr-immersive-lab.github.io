@@ -40,7 +40,7 @@
     <section class="detail-section">
         <div class="container">
             <h3>Descripción</h3>
-            <p>Este proyecto adapta un sistema de realidad aumentada existente —originalmente diseñado para la colocación de tornillos pediculares en columna vertebral— hacia un sistema de planificación preoperatoria para neurocirugía. Se basa en el trabajo de Pose-Díez-de-la-Lastra et al. (IJCARS 2023), reutilizando aproximadamente el 70% del código original bajo licencia BSD-3-Clause, y reemplazando la lógica específica de tornillos por funcionalidades de neurocirugía.</p>
+            <p>Este proyecto adapta un sistema de realidad aumentada existente —originalmente diseñado para la colocación de tornillos pediculares en columna vertebral— hacia un sistema de planificación preoperatoria para neurocirugía. Se basa en el trabajo de Pose-Díez-de-la-Lastra et al. (IJCARS 2023), publicado bajo licencia BSD-3-Clause, reemplazando la lógica específica de tornillos por funcionalidades propias de neurocirugía.</p>
             <p>El sistema permite al neurocirujano visualizar mediante HoloLens 2 modelos 3D del cerebro, tumor, ventrículos y otras estructuras, navegar por imágenes MRI en tiempo real, realizar mediciones y planificar el abordaje quirúrgico. La arquitectura conecta tres elementos: HoloLens 2 (visualización holográfica), Unity en PC (hub central que transmite todo vía Holographic Remoting) y 3D Slicer en PC (procesamiento de imágenes, segmentación y mediciones), comunicándose Unity y Slicer mediante el protocolo OpenIGTLink sobre TCP/IP.</p>
         </div>
     </section>
@@ -64,7 +64,7 @@
             <div class="tech-grid">
                 <div class="tech-box">
                     <h4>🖥️ Hardware</h4>
-                    <p>Microsoft HoloLens 2, conectado por WiFi a un PC con GPU dedicada (mínimo 16 GB RAM).</p>
+                    <p>Microsoft HoloLens 2. PC con Windows 10/11, GPU dedicada (recomendada para Holographic Remoting) y mínimo 16 GB de RAM. Ambos conectados a la misma red WiFi, preferiblemente de 5 GHz para menor latencia.</p>
                 </div>
                 <div class="tech-box">
                     <h4>⚙️ Software</h4>
