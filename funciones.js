@@ -68,92 +68,126 @@ window.addEventListener('scroll', function() {
     lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
 });
 
+const coloresCategoria = {
+    "Educación Anatómica": "#68d4f2",
+    "Cirugía": "#90ee90",
+    "Biomecánica": "#ffa94d",
+    "Simulación Clínica": "#fa6de5",
+    "Rehabilitación": "#32cd32",
+    "Salud Animal / Veterinaria": "#d9a066",
+    "Telemedicina": "#8d68e3"
+};
+
 const proyectos = [
     {
         id: 1,
-        nombre: "Magic Mirror para Miembro Superior",
+        nombre: "Magic Mirror – Miembro Superior",
         categoria: "Educación Anatómica",
-        descripcion: "Plataforma inmersiva para aprendizaje de anatomía humana mediante modelos 3D interactivos.",
-        color: "#68d4f2",
+        descripcion: "Adapta la ventana AR del espejo mágico al movimiento completo del miembro superior.",
     },
     {
         id: 2,
-        nombre: "ARMyo Mirror: Visualizador Muscular Interactivo para Miembro Inferior con AR ",
-        categoria: "Simulación Clínica",
-        descripcion: "Desarrollar un sistema Magic Mirror híbrido que combine una vista mitad real (espejo con cuerpo del usuario) y mitad virtual (simulación anatómica)",
-        color: "#90ee90"
+        nombre: "ARMyo Mirror – Miembro Inferior",
+        categoria: "Biomecánica",
+        descripcion: "Vista híbrida real/virtual que anima la contracción muscular de rodilla, cadera y pie.",
     },
     {
         id: 3,
         nombre: "HoloLearn Anatomy",
-        categoria: "Educacion Anatómica",
-        descripcion: "HoloLearn Anatomy es una herramienta educativa inmersiva basada en realidad aumentada con HoloLens 2, diseñada para facilitar el aprendizaje activo y gamificado de la anatomía humana",
-        color: "#90c8eeff"
+        categoria: "Educación Anatómica",
+        descripcion: "Exploración gamificada de anatomía 3D en HoloLens 2, con modo libre y serious game.",
     },
     {
         id: 4,
         nombre: "OculusLearn Anatomy",
-        categoria: "Educacion Anatómica",
-        descripcion: "OculusLearn Anatomy es una herramienta educativa inmersiva basada en realidad virtual con Oculus Quest 2, diseñada para facilitar el aprendizaje activo y gamificado de la anatomía humana",
-        color: "#ffe364ff"
+        categoria: "Educación Anatómica",
+        descripcion: "La misma experiencia gamificada de anatomía, adaptada a Oculus Quest 2 en VR.",
     },
     {
         id: 5,
         nombre: "AR-Body Atlas Mobile",
-        categoria: "Educacion Anatómica",
-        descripcion: "R-Body Atlas Mobile es una aplicación de realidad aumentada para dispositivos móviles (smartphones y tablets) que permite superponer modelos 3D de órganos del tórax y abdomen (como corazón, pulmones, hígado, estómago, riñones, intestinos) directamente sobre el cuerpo de una persona en tiempo real",
-        color: "#e36a68ff"
+        categoria: "Educación Anatómica",
+        descripcion: "Superpone órganos del tórax y abdomen sobre el cuerpo usando solo un smartphone.",
     },
     {
         id: 6,
         nombre: "HandXplorer AR",
-        categoria: "Educacion Anatómica",
-        descripcion: "Desarrollar una aplicación móvil de realidad aumentada basada en tracking de imagen, que permita al usuario: Enfocar una imagen guía de una mano. Visualizar sobre ella un modelo 3D completo de la mano en RA.",
-        color: "#e368caff"
+        categoria: "Educación Anatómica",
+        descripcion: "Explora huesos de la mano en RA, aislando y ampliando cada estructura con XREAL.",
     },
     {
         id: 7,
-        nombre: "VR-SurgPlanQ2 — Visualizador VR para Planificación Preoperatoria",
-        categoria: "Educacion Anatómica",
-        descripcion: "Sistema de streaming tiempo real que conecta 3DSlicer con VR mediante OpenIGTLink, permitiendo visualización inmersiva de segmentaciones DICOM sin exportación manual. El cirujano visualiza y navega en VR mientras mantiene control de edición en 3DSlicer, con retroalimentación de puntos de referencia VR hacia el software médico.",
-        color: "#8d68e3ff"
+        nombre: "VR-SurgPlanQ2",
+        categoria: "Cirugía",
+        descripcion: "Streaming en tiempo real de segmentaciones DICOM desde 3D Slicer hacia un visor VR.",
     },
     {
         id: 8,
-        nombre: "Virtual Dissection Hall - VR",
-        categoria: "Educacion Anatómica",
-        descripcion: "El desarrollo de Virtual Anatomy Mirror (VAM), una aplicación educativa inmersiva en realidad virtual con Oculus Quest 2, inspirada en el concepto de “magic mirror” utilizado en entornos de educación anatómica avanzada.",
-        color: "#fa6d6dff"
+        nombre: "Virtual Dissection Hall (VAM)",
+        categoria: "Educación Anatómica",
+        descripcion: "Anfiteatro virtual con cadáver digital a escala real, explorable por sistemas anatómicos.",
     },
     {
         id: 9,
-        nombre: "Simulador Facial para Anatomía - AR",
-        categoria: "Educacion Anatómica",
-        descripcion: "Desarrollar una aplicación móvil de realidad aumentada que utilice MediaPipe Face Mesh para detectar 468 landmarks faciales en tiempo real y superponer capas anatómicas interactivas",
-        color: "#6dc4faff"
+        nombre: "Simulador Facial para Anatomía",
+        categoria: "Educación Anatómica",
+        descripcion: "Detecta 468 puntos faciales y muestra la activación muscular y nerviosa en tiempo real.",
     },
     {
         id: 10,
-        nombre: "ARMyo Mirror: Visualizador Muscular Interactivo para Miembro Superior con AR",
-        categoria: "Educacion Anatómica",
-        descripcion: "Un sistema Magic Mirror híbrido que combine una vista mitad real (espejo con cuerpo del usuario) y mitad virtual (simulación anatómica)",
-        color: "#fa6de5ff"
+        nombre: "ARMyo Mirror – Miembro Superior",
+        categoria: "Biomecánica",
+        descripcion: "Vista híbrida real/virtual que anima la contracción muscular de brazo y antebrazo.",
     },
     {
         id: 11,
-        nombre: "Proyecto: ThorAX — Visor gestual de imágenes médicas (CT/MR/XR)",
-        categoria: "Educacion Anatómica",
-        descripcion: "Un visor interactivo de imágenes médicas para tórax y abdomen controlado con gestos usando Kinect v2",
-        color: "#f5fa6dff"
+        nombre: "ThorAX",
+        categoria: "Educación Anatómica",
+        descripcion: "Visor gestual de CT/MR/RX de tórax y abdomen, controlado con las manos vía Kinect v2.",
     },
     {
         id: 12,
-        nombre: "TransfusionVR — Simulador Clínico de Medicina Transfusional",
-        categoria: "Educacion Anatómica",
-        descripcion: "Un simulador clínico en realidad virtual inmersiva para la enseñanza y evaluación de competencias en medicina transfusional utilizando visores Meta Quest 3, que permita recrear un entorno hospitalario completo",
-        color: "#f5fa6dff"
+        nombre: "TransfusionVR",
+        categoria: "Simulación Clínica",
+        descripcion: "Simulador hospitalario en VR para practicar procedimientos de medicina transfusional en equipo.",
     },
-];         
+    {
+        id: 13,
+        nombre: "Neuromotion VR",
+        categoria: "Rehabilitación",
+        descripcion: "Controla un avatar en VR mediante imaginación motora captada por EEG (BCI).",
+    },
+    {
+        id: 14,
+        nombre: "KinectCalib",
+        categoria: "Rehabilitación",
+        descripcion: "Mejora la precisión del esqueleto de Kinect para alinear modelos 3D con el cuerpo real.",
+    },
+    {
+        id: 15,
+        nombre: "VetSim: Anestesia y Cirugía Canina",
+        categoria: "Salud Animal / Veterinaria",
+        descripcion: "Simula el uso de máquina de anestesia y bomba de infusión en cirugía canina.",
+    },
+    {
+        id: 16,
+        nombre: "LaparoView VST",
+        categoria: "Cirugía",
+        descripcion: "Muestra el video laparoscópico en una pantalla virtual gigante dentro del visor Meta Quest 3.",
+    },
+    {
+        id: 17,
+        nombre: "LaparoView OST",
+        categoria: "Cirugía",
+        descripcion: "La misma visualización laparoscópica aumentada, en HoloLens con lentes ópticas transparentes.",
+    },
+    {
+        id: 18,
+        nombre: "KineMind",
+        categoria: "Rehabilitación",
+        descripcion: "Combina VR y retroalimentación háptica para entrenar memoria y coordinación motora.",
+    },
+];
 
 const equipo = [
     {
@@ -174,16 +208,16 @@ function cargarProyectos() {
     const track = document.getElementById('proyectos-track');
     if (!track) return;
     proyectos.forEach((proyecto, index) => {
+        const color = coloresCategoria[proyecto.categoria] || "#68d4f2";
         const projectCard = document.createElement('div');
         projectCard.className = 'project-card';
         projectCard.style.animationDelay = `${index * 0.1}s`;
         projectCard.innerHTML = `
-            <div class="project-image" style="background: linear-gradient(45deg, ${proyecto.color}, ${proyecto.color}dd)">
+            <div class="project-image" style="background: linear-gradient(45deg, ${color}, ${color}dd)">
                 ${proyecto.nombre}
             </div>
             <div class="project-info">
-                <h4>${proyecto.nombre}</h4>
-                <p><strong>Categoría:</strong> ${proyecto.categoria}</p>
+                <span class="category-badge" style="color: ${color}; border-color: ${color}; background: ${color}22;">${proyecto.categoria}</span>
                 <p>${proyecto.descripcion}</p>
             </div>
         `;
@@ -280,5 +314,3 @@ setInterval(() => {
         }
     }
 }, 3000);
-
-
