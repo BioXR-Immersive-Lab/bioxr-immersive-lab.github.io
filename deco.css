@@ -331,8 +331,6 @@ body.header-reducido {
     margin-bottom: 20px;
     font-size: 1.1rem; 
     line-height: 1.7; 
-    text-align: justify;
-    text-align-last: left;
 }
 .about-img {
     width: 100%;
@@ -738,8 +736,6 @@ body.header-reducido {
 .detail-section p {
     line-height: 1.8;
     margin-bottom: 18px;
-    text-align: justify !important;
-    text-align-last: left;
     max-width: 900px;
 }
 .objetivos-list {
@@ -849,3 +845,4 @@ body.header-reducido {
         max-width: 220px;
     }
 }
+
