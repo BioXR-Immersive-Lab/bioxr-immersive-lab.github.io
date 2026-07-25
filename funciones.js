@@ -187,6 +187,12 @@ const proyectos = [
         categoria: "Rehabilitación",
         descripcion: "Combina VR y retroalimentación háptica para entrenar memoria y coordinación motora.",
     },
+    {
+        id: 19,
+        nombre: "Vib-AR",
+        categoria: "Rehabilitación",
+        descripcion: "Usa RA y vibración para aliviar el dolor del miembro fantasma mediante ilusión visual de movimiento.",
+    },
 ];
 
 const equipo = [
