@@ -417,6 +417,7 @@ body.header-reducido {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
     color: var(--negro);
     font-weight: bold;
     border-radius: 08px; 
