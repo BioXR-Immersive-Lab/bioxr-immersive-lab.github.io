@@ -98,6 +98,12 @@ body {
     filter: drop-shadow(0 0 10px var(--azul-celeste));
     transition: height 0.4s ease;
 }
+.logo-upch {
+    background: #ffffff;
+    padding: 3px;
+    border-radius: 6px;
+    filter: none;
+}
 .retro-title {
     font-size: 1rem;
     color: var(--azul-celeste);
