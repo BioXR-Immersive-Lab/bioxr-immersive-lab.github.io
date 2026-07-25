@@ -158,38 +158,12 @@ const proyectos = [
 const equipo = [
     {
         id: 1,
-        nombre: "Dr. Rogger ",
-        rol: "Director del Laboratorio",
-        bio: "PhD en Ingeniería Biomédica con 10 años de experiencia en tecnologías médicas avanzadas.",
-        color: "#90ee90"
-    },
-    {
-        id: 2,
-        nombre: "Dra. ",
-        rol: "Investigadora Principal",
-        bio: "Especialista en simulación clínica y educación médica con múltiples publicaciones internacionales.",
+        nombre: "MsC. Rogger Hoyos Alvitez",
+        iniciales: "RH",
+        foto: "https://www.image2url.com/r2/default/images/1784963580476-99180e72-f27d-4e3e-9c43-65dc2fdb5f16.png",
+        rol: "Fundador del Laboratorio BioXR Immersive Lab",
+        bio: "Docente de la carrera de Ingeniería Biomédica en la Universidad Peruana Cayetano Heredia. Ingeniero biomédico con maestría en Biomédica Computacional por la Universidad Técnica de Múnich (TUM), y más de 7 años de experiencia en tecnologías de Realidad Extendida (XR) aplicadas a la medicina.",
         color: "#68d4f2"
-    },
-    {
-        id: 3,
-        nombre: "Ing. ",
-        rol: "Desarrollador Senior VR/AR",
-        bio: "5 años de experiencia en desarrollo de aplicaciones inmersivas para salud y educación médica.",
-        color: "#90ee90"
-    },
-    {
-        id: 4,
-        nombre: "Est. ",
-        rol: "Asistente de Investigación",
-        bio: "Estudiante de Ingeniería Biomédica, becaria del laboratorio con enfoque en realidad aumentada.",
-        color: "#68d4f2"
-    },
-    {
-        id: 5,
-        nombre: "Dra.ssds sd",
-        rol: "Especialista en Rehabilitación",
-        bio: "Especialista en terapia física y rehabilitación con enfoque en tecnologías XR para recuperación motora.",
-        color: "#90ee90"
     }
 ];
 
@@ -225,8 +199,8 @@ function cargarEquipo() {
         teamCard.className = 'team-card';
         teamCard.style.animationDelay = `${index * 0.1}s`;
         teamCard.innerHTML = `
-            <div class="member-photo" style="background: linear-gradient(45deg, ${miembro.color}, ${miembro.color}dd)">
-                ${miembro.nombre.split(' ')[0].charAt(0)}${miembro.nombre.split(' ')[1].charAt(0)}
+            <div class="member-photo" style="${miembro.foto ? `background-image: url('${miembro.foto}'); background-size: cover; background-position: center;` : `background: linear-gradient(45deg, ${miembro.color}, ${miembro.color}dd)`}">
+                ${miembro.foto ? '' : (miembro.iniciales ? miembro.iniciales : miembro.nombre.split(' ')[0].charAt(0) + miembro.nombre.split(' ')[1].charAt(0))}
             </div>
             <div class="member-info">
                 <h4>${miembro.nombre}</h4>
@@ -249,6 +223,7 @@ function moveCarousel(tipo, direction) {
         if (proyectosIndex > proyectos.length - 3) proyectosIndex = 0;
         index = proyectosIndex;
     } else if (tipo === 'equipo') {
+        if (equipo.length <= 3) return;
         track = document.getElementById('equipo-track');
         index = equipoIndex;
         equipoIndex += direction;        
