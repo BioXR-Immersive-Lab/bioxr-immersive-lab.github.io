@@ -327,15 +327,19 @@ body.header-reducido {
 .about-text p {
     margin-bottom: 20px;
     font-size: 1.1rem; 
-    line-height: 1.6; 
+    line-height: 1.7; 
+    text-align: justify;
+    text-align-last: left;
 }
 .about-img {
     width: 100%;
     height: 300px; 
-    object-fit: cover;
+    object-fit: contain;
+    background: rgba(0, 0, 0, 0.6);
     border: 2px solid var(--verde-claro); 
     box-shadow: 0 0 15px var(--verde-claro); 
     border-radius: 8px; 
+    padding: 20px;
 }
 .mission-grid {
     display: grid;
