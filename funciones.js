@@ -158,7 +158,7 @@ const proyectos = [
 const equipo = [
     {
         id: 1,
-        nombre: "MsC. Rogger Hoyos Alvitez",
+        nombre: "M.Sc. Miguel Rogger Hoyos Alvitez",
         iniciales: "RH",
         foto: "https://www.image2url.com/r2/default/images/1784963580476-99180e72-f27d-4e3e-9c43-65dc2fdb5f16.png",
         rol: "Fundador del Laboratorio BioXR Immersive Lab",
@@ -280,4 +280,5 @@ setInterval(() => {
         }
     }
 }, 3000);
+
 
