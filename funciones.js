@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
     cargarProyectos();
     cargarEquipo();
     iniciarHeroCarousel();
+    ajustarPaddingBody();
     setInterval(() => {
         moveCarousel('proyectos', 1);
     }, 5000);
@@ -32,46 +33,24 @@ function iniciarHeroCarousel() {
     }, 4000);
 }
 
+function ajustarPaddingBody() {
+    if (!header) return;
+    document.body.style.paddingTop = header.offsetHeight + 'px';
+}
+
 function toggleHeaderSize(reduce) {
     if (!header) return;
     if (reduce && !isHeaderReduced) {
-        header.style.height = '50px';
-        header.style.padding = '5px 0';
-        const logo = document.querySelector('.logo');
-        if (logo) {
-            logo.style.height = '35px';
-            logo.style.transition = 'height 0.3s ease';
-        }
-        const logoText = document.querySelector('.logo-text');
-        if (logoText) {
-            logoText.style.transform = 'scale(0.8)';
-            logoText.style.transition = 'transform 0.3s ease';
-        }
-        const navLinks = document.querySelectorAll('.nav-link');
-        navLinks.forEach(link => {
-            link.style.padding = '6px 10px';
-            link.style.fontSize = '0.85rem';
-        });
+        header.classList.add('header-reducido');
         isHeaderReduced = true;
     } else if (!reduce && isHeaderReduced) {
-        header.style.height = '';
-        header.style.padding = '';
-        const logo = document.querySelector('.logo');
-        if (logo) {
-            logo.style.height = '60px';
-        }
-        const logoText = document.querySelector('.logo-text');
-        if (logoText) {
-            logoText.style.transform = '';
-        }
-        const navLinks = document.querySelectorAll('.nav-link');
-        navLinks.forEach(link => {
-            link.style.padding = '';
-            link.style.fontSize = '';
-        });
+        header.classList.remove('header-reducido');
         isHeaderReduced = false;
     }
+    ajustarPaddingBody();
 }
+
+window.addEventListener('resize', ajustarPaddingBody);
 
 window.addEventListener('scroll', function() {
     if (!header) return;
@@ -326,4 +305,3 @@ setInterval(() => {
         }
     }
 }, 3000);
-
