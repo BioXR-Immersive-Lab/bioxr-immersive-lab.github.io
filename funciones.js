@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     cargarProyectos();
     cargarEquipo();
+    iniciarHeroCarousel();
     setInterval(() => {
         moveCarousel('proyectos', 1);
     }, 5000);
@@ -18,6 +19,18 @@ document.addEventListener('DOMContentLoaded', function() {
         moveCarousel('equipo', 1);
     }, 6000);
 });
+
+let heroCarouselIndex = 0;
+
+function iniciarHeroCarousel() {
+    const imgs = document.querySelectorAll('#hero-carousel .hero-carousel-img');
+    if (imgs.length < 2) return;
+    setInterval(() => {
+        imgs[heroCarouselIndex].classList.remove('active');
+        heroCarouselIndex = (heroCarouselIndex + 1) % imgs.length;
+        imgs[heroCarouselIndex].classList.add('active');
+    }, 4000);
+}
 
 function toggleHeaderSize(reduce) {
     if (!header) return;
@@ -313,3 +326,4 @@ setInterval(() => {
         }
     }
 }, 3000);
+
