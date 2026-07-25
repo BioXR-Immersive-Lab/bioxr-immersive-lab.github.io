@@ -117,9 +117,9 @@ const proyectos = [
     },
     {
         id: 7,
-        nombre: "VR-SurgPlanQ2",
+        nombre: "NeuroPlan AR — Planificación Preoperatoria en Neurocirugía",
         categoria: "Cirugía",
-        descripcion: "Streaming en tiempo real de segmentaciones DICOM desde 3D Slicer hacia un visor VR.",
+        descripcion: "Sistema de RA con HoloLens 2 para navegar MRI, medir y planificar el abordaje quirúrgico sobre modelos 3D del cerebro.",
     },
     {
         id: 8,
@@ -209,8 +209,10 @@ function cargarProyectos() {
     if (!track) return;
     proyectos.forEach((proyecto, index) => {
         const color = coloresCategoria[proyecto.categoria] || "#68d4f2";
-        const projectCard = document.createElement('div');
+        const idPadded = String(proyecto.id).padStart(2, '0');
+        const projectCard = document.createElement('a');
         projectCard.className = 'project-card';
+        projectCard.href = `proyectos/proyecto-${idPadded}.html`;
         projectCard.style.animationDelay = `${index * 0.1}s`;
         projectCard.innerHTML = `
             <div class="project-image" style="background: linear-gradient(45deg, ${color}, ${color}dd)">
