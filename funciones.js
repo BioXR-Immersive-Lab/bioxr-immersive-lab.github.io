@@ -218,6 +218,12 @@ const proyectos = [
         categoria: "Instrumentación Biomédica",
         descripcion: "Mide el costo fisiológico de la marcha en adultos mayores durante la prueba de caminata de 6 minutos.",
     },
+    {
+        id: 24,
+        nombre: "S-REHAB",
+        categoria: "Instrumentación Biomédica",
+        descripcion: "Wearable con IMU y sEMG que objetiva la rehabilitación del hombro en tiempo real.",
+    },
 ];
 
 const equipo = [
