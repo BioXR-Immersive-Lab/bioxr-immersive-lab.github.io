@@ -363,6 +363,33 @@ body.header-reducido {
     border-color: var(--verde-claro);
     box-shadow: 0 0 25px var(--verde-claro); 
 }
+.areas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+}
+.area-card {
+    background: rgba(0, 0, 0, 0.8);
+    border: 2px solid;
+    border-radius: 12px;
+    padding: 30px 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+    min-height: 220px;
+}
+.area-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.15);
+}
+.area-card h3 {
+    margin-bottom: 12px;
+    font-size: 1.15rem;
+}
+.area-card p {
+    font-size: 0.9rem;
+    color: var(--blanco);
+}
 .card-icon {
     font-size: 2.8rem; 
     margin-bottom: 10px; 
@@ -845,4 +872,3 @@ body.header-reducido {
         max-width: 220px;
     }
 }
-
