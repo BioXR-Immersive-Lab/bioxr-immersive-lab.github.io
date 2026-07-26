@@ -206,6 +206,12 @@ const proyectos = [
         categoria: "Instrumentación Biomédica",
         descripcion: "Monitorea ECG y SpO2 para prevenir el sobreesfuerzo cardiovascular en rehabilitación post-angioplastía.",
     },
+    {
+        id: 22,
+        nombre: "VIVAS",
+        categoria: "Instrumentación Biomédica",
+        descripcion: "Wearable con ECG, PPG e IMU que detecta estados presincopales y emite alertas preventivas.",
+    },
 ];
 
 const equipo = [
