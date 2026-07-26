@@ -224,6 +224,12 @@ const proyectos = [
         categoria: "Instrumentación Biomédica",
         descripcion: "Wearable con IMU y sEMG que objetiva la rehabilitación del hombro en tiempo real.",
     },
+    {
+        id: 25,
+        nombre: "SpiroApp",
+        categoria: "Instrumentación Biomédica",
+        descripcion: "Dispositivo portátil con biofeedback que guía el entrenamiento inspiratorio en rehabilitación pulmonar domiciliaria.",
+    },
 ];
 
 const equipo = [
