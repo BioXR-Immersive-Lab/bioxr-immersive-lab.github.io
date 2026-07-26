@@ -212,6 +212,12 @@ const proyectos = [
         categoria: "Instrumentación Biomédica",
         descripcion: "Wearable con ECG, PPG e IMU que detecta estados presincopales y emite alertas preventivas.",
     },
+    {
+        id: 23,
+        nombre: "SAMIWALK",
+        categoria: "Instrumentación Biomédica",
+        descripcion: "Mide el costo fisiológico de la marcha en adultos mayores durante la prueba de caminata de 6 minutos.",
+    },
 ];
 
 const equipo = [
