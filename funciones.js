@@ -75,7 +75,8 @@ const coloresCategoria = {
     "Simulación Clínica": "#fa6de5",
     "Rehabilitación": "#32cd32",
     "Salud Animal / Veterinaria": "#d9a066",
-    "Telemedicina": "#8d68e3"
+    "Telemedicina": "#8d68e3",
+    "Instrumentación Biomédica": "#f5fa6d"
 };
 
 const proyectos = [
@@ -192,6 +193,12 @@ const proyectos = [
         nombre: "Vib-AR",
         categoria: "Rehabilitación",
         descripcion: "Usa RA y vibración para aliviar el dolor del miembro fantasma mediante ilusión visual de movimiento.",
+    },
+    {
+        id: 20,
+        nombre: "BYMAX",
+        categoria: "Instrumentación Biomédica",
+        descripcion: "Monitorea ECG, SpO2 y temperatura de adultos mayores con IRA en zonas de difícil acceso de Loreto.",
     },
 ];
 
@@ -322,3 +329,4 @@ setInterval(() => {
         }
     }
 }, 3000);
+
