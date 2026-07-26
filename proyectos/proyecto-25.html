@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpiroApp – BioXR Immersive Lab</title>
+    <link rel="stylesheet" href="../deco.css">
+</head>
+<body>
+    <div class="crt-effect"></div>
+    <div class="scanlines"></div>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="logo-section">
+                <div class="logo-glitch">
+                    <img src="https://www.image2url.com/r2/default/images/1784958107487-c54f9db7-3e44-4b59-bb7e-c1c66c2cec53.jpg" alt="Logo BioXR Immersive Lab" class="logo">
+                </div>
+                <div class="logo-glitch">
+                    <img src="https://www.image2url.com/r2/default/images/1784958036570-fd8028b6-da82-412a-966a-4b949d5b0730.jpg" alt="Logo Universidad Peruana Cayetano Heredia" class="logo logo-upch">
+                </div>
+                <div class="logo-text">
+                    <h1 class="retro-title">BioXR Immersive Lab – Universidad Peruana Cayetano Heredia</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="detail-hero">
+        <div class="container">
+            <a href="../index.html#proyectos" class="back-link">← Volver a Proyectos</a>
+            <div class="badge-row">
+                <span class="category-badge" style="color:#f5fa6d; border-color:#f5fa6d; background:#f5fa6d22;">Instrumentación Biomédica</span>
+                <span class="status-badge">🔧 En Desarrollo</span>
+            </div>
+            <h2 class="detail-title">SpiroApp — Biofeedback Respiratorio para Rehabilitación Pulmonar Domiciliaria</h2>
+        </div>
+    </section>
+
+    <section class="detail-section">
+        <div class="container">
+            <h3>Descripción</h3>
+            <p>La EPOC es un trastorno inflamatorio que representa la tercera causa de muerte mundial según la OMS; en estadios leves, el entrenamiento inspiratorio es clave para frenar la disnea. Sin embargo, la terapia domiciliaria carece de supervisión, lo que genera baja adherencia o ejecuciones incorrectas de la maniobra, por falta de herramientas objetivas para verificar la técnica correcta (inspiración lenta, volumen objetivo y apnea), además del riesgo de fatiga o desaturación sin alertas fisiológicas en tiempo real.</p>
+            <p>Se propone un sistema portátil basado en ESP32 y un sensor de presión diferencial (Sensirion SDP810) para medir presión y calcular el flujo y volumen respiratorio, guiando al usuario mediante la app móvil SpiroApp vía comunicación BLE. El sistema incorpora biofeedback mediante un oxímetro MAX30102 para monitorear la SpO2 durante la maniobra, y almacena el historial de las sesiones en la nube (Firebase) para facilitar el monitoreo remoto.</p>
+        </div>
+    </section>
+
+    <section class="detail-section dark-section">
+        <div class="container">
+            <h3>Objetivos</h3>
+            <ul class="objetivos-list">
+                <li>Medir la presión diferencial (SDP810) y convertirla matemáticamente en flujo y volumen acumulado.</li>
+                <li>Monitorear la SpO2 mediante el oxímetro MAX30102 como medida de seguridad fisiológica.</li>
+                <li>Guiar al usuario de forma autónoma mediante biofeedback interactivo (auditivo y visual) a través de comunicación BLE.</li>
+                <li>Registrar y almacenar el progreso de las sesiones en la nube para facilitar el monitoreo remoto en tele-rehabilitación.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="detail-section">
+        <div class="container">
+            <h3>Tecnología</h3>
+            <div class="tech-grid">
+                <div class="tech-box">
+                    <h4>🖥️ Hardware</h4>
+                    <p>ESP32, sensor de presión diferencial Sensirion SDP810, oxímetro MAX30102, buzzer, PCB diseñada en EasyEDA, carcasa ergonómica impresa en 3D con separación neumática.</p>
+                </div>
+                <div class="tech-box">
+                    <h4>⚙️ Software</h4>
+                    <p>App móvil "SpiroApp" desarrollada en Flutter (curvas, alertas, interfaz gráfica interactiva) con comunicación BLE y almacenamiento del historial de sesiones en Firebase.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="detail-section dark-section">
+        <div class="container">
+            <h3>Equipo</h3>
+            <div class="team-grid">
+                <div class="team-chip">Jhamil Alessandro Soto Vera</div>
+                <div class="team-chip">Barbara Kassy Zevallos Chavez</div>
+                <div class="team-chip">Gabriel Amadeus Castillo Zapata</div>
+                <div class="team-chip">Gustavo Alonso Maldonado Uriarte</div>
+                <div class="team-chip">Diego Carlin Villaroel</div>
+                <div class="team-chip">Matias Ore Gomez</div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div>
+                        <h4 class="retro-subtitle">BioXR Immersive Lab</h4>
+                        <p class="retro-text">Universidad Peruana Cayetano Heredia</p>
+                    </div>
+                </div>
+                <div class="footer-info">
+                    <p class="retro-text">© 2025 BioXR Immersive Lab - UPCH</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../funciones.js"></script>
+</body>
+</html>
