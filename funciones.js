@@ -200,6 +200,12 @@ const proyectos = [
         categoria: "Instrumentación Biomédica",
         descripcion: "Monitorea ECG, SpO2 y temperatura de adultos mayores con IRA en zonas de difícil acceso de Loreto.",
     },
+    {
+        id: 21,
+        nombre: "SONQO",
+        categoria: "Instrumentación Biomédica",
+        descripcion: "Monitorea ECG y SpO2 para prevenir el sobreesfuerzo cardiovascular en rehabilitación post-angioplastía.",
+    },
 ];
 
 const equipo = [
@@ -329,4 +335,3 @@ setInterval(() => {
         }
     }
 }, 3000);
-
