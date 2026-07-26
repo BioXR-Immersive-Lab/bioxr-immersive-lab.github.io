@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S-REHAB – BioXR Immersive Lab</title>
+    <link rel="stylesheet" href="../deco.css">
+</head>
+<body>
+    <div class="crt-effect"></div>
+    <div class="scanlines"></div>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="logo-section">
+                <div class="logo-glitch">
+                    <img src="https://www.image2url.com/r2/default/images/1784958107487-c54f9db7-3e44-4b59-bb7e-c1c66c2cec53.jpg" alt="Logo BioXR Immersive Lab" class="logo">
+                </div>
+                <div class="logo-glitch">
+                    <img src="https://www.image2url.com/r2/default/images/1784958036570-fd8028b6-da82-412a-966a-4b949d5b0730.jpg" alt="Logo Universidad Peruana Cayetano Heredia" class="logo logo-upch">
+                </div>
+                <div class="logo-text">
+                    <h1 class="retro-title">BioXR Immersive Lab – Universidad Peruana Cayetano Heredia</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="detail-hero">
+        <div class="container">
+            <a href="../index.html#proyectos" class="back-link">← Volver a Proyectos</a>
+            <div class="badge-row">
+                <span class="category-badge" style="color:#f5fa6d; border-color:#f5fa6d; background:#f5fa6d22;">Instrumentación Biomédica</span>
+                <span class="status-badge">🔧 En Desarrollo</span>
+            </div>
+            <h2 class="detail-title">S-REHAB — Monitoreo sEMG y Cinemático en Rehabilitación del Miembro Superior</h2>
+        </div>
+    </section>
+
+    <section class="detail-section">
+        <div class="container">
+            <h3>Descripción</h3>
+            <p>En rehabilitación no existe una forma objetiva y cuantitativa de monitorear la ejecución del movimiento, lo que genera dependencia de evaluaciones subjetivas basadas en observación visual y estimación manual del fisioterapeuta. En el Síndrome de Pinzamiento Subacromial (SIS), el seguimiento inadecuado del rango de movimiento (ROM) y del reclutamiento compensatorio del trapecio superior dificulta un tratamiento conservador seguro. Solo el 52.4% de los fisioterapeutas utiliza medidas de resultado objetivas en su práctica clínica.</p>
+            <p>Se propone un sistema wearable modular e inalámbrico en topología estrella (vía BLE) que elimina los cables intermódulos para evitar artefactos de movimiento, dividido en dos nodos de captura sincrónica: un Módulo de Brazo (ESP32 que procesa localmente la orientación 3D mediante IMU BNO055 y la activación del trapecio superior mediante sEMG MyoWare 2.0) y un Módulo de Pecho (HealthyPi 5 con front-end MAX30001 para el registro clínico de ECG).</p>
+            <p>El alcance actual es un prototipo funcional para evaluar la flexión anterior del hombro (0° a 120°) en adultos de 18 a 30 años con SIS, diseñado para su uso en fases iniciales de rehabilitación física ambulatoria bajo supervisión experta o domiciliaria.</p>
+        </div>
+    </section>
+
+    <section class="detail-section dark-section">
+        <div class="container">
+            <h3>Objetivos</h3>
+            <ul class="objetivos-list">
+                <li>Desarrollar un sistema wearable que objetive la rehabilitación del hombro mediante monitoreo cinemático (IMU) y electromiográfico (sEMG).</li>
+                <li>Brindar retroalimentación inmediata al paciente y datos de seguimiento al fisioterapeuta.</li>
+                <li>Clasificar en tiempo real la ejecución del movimiento (verde/amarillo/rojo) según ángulo y %MVIC, basado en los umbrales de Ludewig & Cook.</li>
+                <li>Almacenar los datos de forma asíncrona y generar reportes con ROM máximo, ratio de eficiencia y evolución de RMS/FC.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="detail-section">
+        <div class="container">
+            <h3>Tecnología</h3>
+            <div class="tech-grid">
+                <div class="tech-box">
+                    <h4>🖥️ Hardware</h4>
+                    <p>Módulo de Brazo: ESP32 + IMU BNO055 + sEMG MyoWare 2.0. Módulo de Pecho: HealthyPi 5 con front-end MAX30001. Comunicación inalámbrica BLE en topología estrella.</p>
+                </div>
+                <div class="tech-box">
+                    <h4>⚙️ Software</h4>
+                    <p>Firmware embebido con procesamiento local (edge computing) y clasificación por umbrales, almacenamiento asíncrono en SQLite, e interfaz Unity 3D (modelo humanoide, ángulo, ROM, repeticiones y velocidad angular).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="detail-section dark-section">
+        <div class="container">
+            <h3>Equipo</h3>
+            <div class="team-grid">
+                <div class="team-chip">Andre Alexis Palomino Mozo</div>
+                <div class="team-chip">André Vallejo Canchanya</div>
+                <div class="team-chip">Luis Alejandro Luque Prado</div>
+                <div class="team-chip">Mishelle Llano Guerrero</div>
+                <div class="team-chip">Anthony Frank Callupe Quispe</div>
+                <div class="team-chip">Daniel Bagkdan Lehinad Cardenas Paniagua</div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div>
+                        <h4 class="retro-subtitle">BioXR Immersive Lab</h4>
+                        <p class="retro-text">Universidad Peruana Cayetano Heredia</p>
+                    </div>
+                </div>
+                <div class="footer-info">
+                    <p class="retro-text">© 2025 BioXR Immersive Lab - UPCH</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../funciones.js"></script>
+</body>
+</html>
