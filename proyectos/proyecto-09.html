@@ -1,106 +1,100 @@
 <!DOCTYPE html>
+
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simulador Facial para Anatomía – BioXR Immersive Lab</title>
-    <link rel="stylesheet" href="../deco.css">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Simulador Facial para Anatomía – BioXR Immersive Lab</title>
+<link href="../deco.css" rel="stylesheet"/><link href="https://bioxr-immersive-lab.github.io/proyectos/proyecto-09.html" hreflang="es" rel="alternate"/><link href="https://bioxr-immersive-lab.github.io/proyectos/proyecto-09-en.html" hreflang="en" rel="alternate"/><link href="https://bioxr-immersive-lab.github.io/proyectos/proyecto-09.html" hreflang="x-default" rel="alternate"/>
 </head>
 <body>
-    <div class="crt-effect"></div>
-    <div class="scanlines"></div>
-
-    <header class="site-header">
-        <div class="container header-inner">
-            <div class="logo-section">
-                <div class="logo-glitch">
-                    <img src="https://www.image2url.com/r2/default/images/1784958107487-c54f9db7-3e44-4b59-bb7e-c1c66c2cec53.jpg" alt="Logo BioXR Immersive Lab" class="logo">
-                </div>
-                <div class="logo-glitch">
-                    <img src="https://www.image2url.com/r2/default/images/1784958036570-fd8028b6-da82-412a-966a-4b949d5b0730.jpg" alt="Logo Universidad Peruana Cayetano Heredia" class="logo logo-upch">
-                </div>
-                <div class="logo-text">
-                    <h1 class="retro-title">BioXR Immersive Lab – Universidad Peruana Cayetano Heredia</h1>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <section class="detail-hero">
-        <div class="container">
-            <a href="../index.html#proyectos" class="back-link">← Volver a Proyectos</a>
-            <div class="badge-row">
-                <span class="category-badge" style="color:#68d4f2; border-color:#68d4f2; background:#68d4f222;">Educación Anatómica</span>
-                <span class="status-badge">🔧 En Desarrollo</span>
-            </div>
-            <h2 class="detail-title">Simulador Facial para Anatomía</h2>
-        </div>
-    </section>
-
-    <section class="detail-section">
-        <div class="container">
-            <h3>Descripción</h3>
-            <p>El aprendizaje de la anatomía facial y neuroanatomía presenta desafíos únicos debido a la complejidad de las expresiones faciales y su relación con estructuras anatómicas subyacentes. Los estudiantes de medicina, odontología y cirugía plástica tienen dificultades para comprender cómo los músculos faciales, nervios craneales (especialmente el VII par craneal) y estructuras vasculares se coordinan para producir expresiones. Los métodos tradicionales no permiten visualizar la activación muscular dinámica en tiempo real, limitando la comprensión de la biomecánica facial y dificultando el diagnóstico de patologías como parálisis facial o trastornos neuromusculares.</p>
-            <p>Se propone una aplicación móvil de realidad aumentada que utiliza MediaPipe Face Mesh para detectar 468 landmarks faciales en tiempo real y superponer capas anatómicas interactivas sobre el rostro del usuario.</p>
-        </div>
-    </section>
-
-    <section class="detail-section dark-section">
-        <div class="container">
-            <h3>Objetivos</h3>
-            <ul class="objetivos-list">
-                <li>Visualizar músculos faciales (masetero, temporal, buccinador, cigomático mayor/menor, orbicular) superpuestos sobre el rostro.</li>
-                <li>Observar la activación muscular en tiempo real durante expresiones (sonrisa, ceño fruncido, apertura bucal).</li>
-                <li>Explorar el recorrido del nervio facial (VII par craneal) y sus ramas.</li>
-                <li>Incluir un modo patológico para simular parálisis facial de Bell, con gamificación ("reproduce esta expresión", "localiza la lesión neurológica").</li>
-            </ul>
-        </div>
-    </section>
-
-    <section class="detail-section">
-        <div class="container">
-            <h3>Tecnología</h3>
-            <div class="tech-grid">
-                <div class="tech-box">
-                    <h4>🖥️ Hardware</h4>
-                    <p>Smartphone (iOS o Android).</p>
-                </div>
-                <div class="tech-box">
-                    <h4>⚙️ Software</h4>
-                    <p>Unity3D + MediaPipe + AR Foundation.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="detail-section dark-section">
-        <div class="container">
-            <h3>Equipo</h3>
-            <div class="team-grid">
-                <div class="team-chip">Camila Miranda Lamas Carrubba</div>
-                <div class="team-chip">Mariana Rocío Sánchez Saavedra</div>
-                <div class="team-chip">Miranda Naomi Huidobro Kokubun</div>
-                <div class="team-chip">Jahaira Quorianka Castro Huarsocca</div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="site-footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <div>
-                        <h4 class="retro-subtitle">BioXR Immersive Lab</h4>
-                        <p class="retro-text">Universidad Peruana Cayetano Heredia</p>
-                    </div>
-                </div>
-                <div class="footer-info">
-                    <p class="retro-text">© 2025 BioXR Immersive Lab - UPCH</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script src="../funciones.js"></script>
+<div class="crt-effect"></div>
+<div class="scanlines"></div>
+<header class="site-header">
+<div class="container header-inner">
+<div class="logo-section">
+<div class="logo-glitch">
+<img alt="Logo BioXR Immersive Lab" class="logo" src="https://www.image2url.com/r2/default/images/1784958107487-c54f9db7-3e44-4b59-bb7e-c1c66c2cec53.jpg"/>
+</div>
+<div class="logo-glitch">
+<img alt="Logo Universidad Peruana Cayetano Heredia" class="logo logo-upch" src="https://www.image2url.com/r2/default/images/1784958036570-fd8028b6-da82-412a-966a-4b949d5b0730.jpg"/>
+</div>
+<div class="logo-text">
+<h1 class="retro-title">BioXR Immersive Lab – Universidad Peruana Cayetano Heredia</h1>
+</div>
+</div>
+<div aria-label="Selector de idioma" class="language-switcher"><span aria-hidden="true" class="language-icon">🌐</span><span class="language-active">ES</span><span class="language-separator">|</span><a aria-label="View this project in English" href="proyecto-09-en.html" lang="en">EN</a></div></div>
+</header>
+<section class="detail-hero">
+<div class="container">
+<a class="back-link" href="../index.html#proyectos">← Volver a Proyectos</a>
+<div class="badge-row">
+<span class="category-badge" style="color:#68d4f2; border-color:#68d4f2; background:#68d4f222;">Educación Anatómica</span>
+<span class="status-badge">🔧 En Desarrollo</span>
+</div>
+<h2 class="detail-title">Simulador Facial para Anatomía</h2>
+</div>
+</section>
+<section class="detail-section">
+<div class="container">
+<h3>Descripción</h3>
+<p>El aprendizaje de la anatomía facial y neuroanatomía presenta desafíos únicos debido a la complejidad de las expresiones faciales y su relación con estructuras anatómicas subyacentes. Los estudiantes de medicina, odontología y cirugía plástica tienen dificultades para comprender cómo los músculos faciales, nervios craneales (especialmente el VII par craneal) y estructuras vasculares se coordinan para producir expresiones. Los métodos tradicionales no permiten visualizar la activación muscular dinámica en tiempo real, limitando la comprensión de la biomecánica facial y dificultando el diagnóstico de patologías como parálisis facial o trastornos neuromusculares.</p>
+<p>Se propone una aplicación móvil de realidad aumentada que utiliza MediaPipe Face Mesh para detectar 468 landmarks faciales en tiempo real y superponer capas anatómicas interactivas sobre el rostro del usuario.</p>
+</div>
+</section>
+<section class="detail-section dark-section">
+<div class="container">
+<h3>Objetivos</h3>
+<ul class="objetivos-list">
+<li>Visualizar músculos faciales (masetero, temporal, buccinador, cigomático mayor/menor, orbicular) superpuestos sobre el rostro.</li>
+<li>Observar la activación muscular en tiempo real durante expresiones (sonrisa, ceño fruncido, apertura bucal).</li>
+<li>Explorar el recorrido del nervio facial (VII par craneal) y sus ramas.</li>
+<li>Incluir un modo patológico para simular parálisis facial de Bell, con gamificación ("reproduce esta expresión", "localiza la lesión neurológica").</li>
+</ul>
+</div>
+</section>
+<section class="detail-section">
+<div class="container">
+<h3>Tecnología</h3>
+<div class="tech-grid">
+<div class="tech-box">
+<h4>🖥️ Hardware</h4>
+<p>Smartphone (iOS o Android).</p>
+</div>
+<div class="tech-box">
+<h4>⚙️ Software</h4>
+<p>Unity3D + MediaPipe + AR Foundation.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="detail-section dark-section">
+<div class="container">
+<h3>Equipo</h3>
+<div class="team-grid">
+<div class="team-chip">Camila Miranda Lamas Carrubba</div>
+<div class="team-chip">Mariana Rocío Sánchez Saavedra</div>
+<div class="team-chip">Miranda Naomi Huidobro Kokubun</div>
+<div class="team-chip">Jahaira Quorianka Castro Huarsocca</div>
+</div>
+</div>
+</section>
+<footer class="site-footer">
+<div class="container">
+<div class="footer-content">
+<div class="footer-logo">
+<div>
+<h4 class="retro-subtitle">BioXR Immersive Lab</h4>
+<p class="retro-text">Universidad Peruana Cayetano Heredia</p>
+</div>
+</div>
+<div class="footer-info">
+<p class="retro-text">© 2025 BioXR Immersive Lab - UPCH</p>
+</div>
+</div>
+</div>
+</footer>
+<script src="../funciones.js"></script>
 </body>
 </html>
+
