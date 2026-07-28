@@ -1,108 +1,101 @@
 <!DOCTYPE html>
+
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BYMAX – BioXR Immersive Lab</title>
-    <link rel="stylesheet" href="../deco.css">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>BYMAX – BioXR Immersive Lab</title>
+<link href="../deco.css" rel="stylesheet"/><link href="https://bioxr-immersive-lab.github.io/proyectos/proyecto-20.html" hreflang="es" rel="alternate"/><link href="https://bioxr-immersive-lab.github.io/proyectos/proyecto-20-en.html" hreflang="en" rel="alternate"/><link href="https://bioxr-immersive-lab.github.io/proyectos/proyecto-20.html" hreflang="x-default" rel="alternate"/>
 </head>
 <body>
-    <div class="crt-effect"></div>
-    <div class="scanlines"></div>
-
-    <header class="site-header">
-        <div class="container header-inner">
-            <div class="logo-section">
-                <div class="logo-glitch">
-                    <img src="https://www.image2url.com/r2/default/images/1784958107487-c54f9db7-3e44-4b59-bb7e-c1c66c2cec53.jpg" alt="Logo BioXR Immersive Lab" class="logo">
-                </div>
-                <div class="logo-glitch">
-                    <img src="https://www.image2url.com/r2/default/images/1784958036570-fd8028b6-da82-412a-966a-4b949d5b0730.jpg" alt="Logo Universidad Peruana Cayetano Heredia" class="logo logo-upch">
-                </div>
-                <div class="logo-text">
-                    <h1 class="retro-title">BioXR Immersive Lab – Universidad Peruana Cayetano Heredia</h1>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <section class="detail-hero">
-        <div class="container">
-            <a href="../index.html#proyectos" class="back-link">← Volver a Proyectos</a>
-            <div class="badge-row">
-                <span class="category-badge" style="color:#f5fa6d; border-color:#f5fa6d; background:#f5fa6d22;">Instrumentación Biomédica</span>
-                <span class="status-badge">🔧 En Desarrollo</span>
-            </div>
-            <h2 class="detail-title">BYMAX — Vigilancia Domiciliaria para Adultos Mayores con IRA</h2>
-        </div>
-    </section>
-
-    <section class="detail-section">
-        <div class="container">
-            <h3>Descripción</h3>
-            <p>Las infecciones respiratorias agudas (IRA) constituyen un importante problema de salud pública debido a su alta incidencia y al riesgo de progresión hacia complicaciones respiratorias en adultos mayores: 1.33 millones de casos a nivel nacional en 2025, de los cuales el 27.9% corresponde a adultos mayores de 60 años. En la región Loreto, el acceso limitado a los establecimientos de salud dificulta el monitoreo domiciliario periódico de estos pacientes, retrasando la detección temprana de signos de deterioro clínico y, en consecuencia, la intervención médica oportuna.</p>
-            <p>Se propone desarrollar un dispositivo compacto (20×10×10 cm, impreso en PLA) que permita monitorear el estado de salud de adultos mayores con IRA en zonas de difícil acceso de Loreto. El sistema mide ECG, SpO2, PPG y temperatura corporal mediante el módulo HealthyPi 5, transmite los datos vía Bluetooth a una app móvil para visualización en tiempo real e historial, y gestiona alertas mediante LED RGB y buzzer cuando detecta signos de deterioro respecto a la línea basal del paciente.</p>
-        </div>
-    </section>
-
-    <section class="detail-section dark-section">
-        <div class="container">
-            <h3>Objetivos</h3>
-            <ul class="objetivos-list">
-                <li>Monitorear ECG, SpO2, PPG y temperatura corporal mediante el módulo HealthyPi 5.</li>
-                <li>Transmitir los datos vía BLE a un ESP32 que gestiona alertas y compara con la línea basal del paciente.</li>
-                <li>Visualizar señales fisiológicas en tiempo real y el historial mediante una app móvil conectada por Bluetooth.</li>
-                <li>Cumplir normativas de seguridad eléctrica (IEC 60601), usabilidad (IEC 62366-1), ciberseguridad (IEC 81001-5-1) y gestión de riesgo (ISO 14971, ISO 13485).</li>
-            </ul>
-        </div>
-    </section>
-
-    <section class="detail-section">
-        <div class="container">
-            <h3>Tecnología</h3>
-            <div class="tech-grid">
-                <div class="tech-box">
-                    <h4>🖥️ Hardware</h4>
-                    <p>HealthyPi 5 (AFE4400 PPG/SpO2, MAX30205 temperatura, MAX30001 ECG/Respiración), ESP32, sensor AHT10, PCB personalizada (alimentación, step-up, carga USB-C), carcasa impresa en 3D (PLA).</p>
-                </div>
-                <div class="tech-box">
-                    <h4>⚙️ Software</h4>
-                    <p>Firmware ESP32 (algoritmo de tendencia, gestión de alertas) + aplicativo móvil con conexión Bluetooth y almacenamiento de historial en la nube.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="detail-section dark-section">
-        <div class="container">
-            <h3>Equipo</h3>
-            <div class="team-grid">
-                <div class="team-chip">Gloria Cecilia Palma Araujo</div>
-                <div class="team-chip">Yandra Melissa Purisaca Tesen</div>
-                <div class="team-chip">Pamela Nicole Vilchez Cotrina</div>
-                <div class="team-chip">Andree Pascale Merino Contreras</div>
-                <div class="team-chip">Sebastian Alberto Norabuena Vicencio</div>
-                <div class="team-chip">Allen Stirs Chavez Rivas</div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="site-footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <div>
-                        <h4 class="retro-subtitle">BioXR Immersive Lab</h4>
-                        <p class="retro-text">Universidad Peruana Cayetano Heredia</p>
-                    </div>
-                </div>
-                <div class="footer-info">
-                    <p class="retro-text">© 2025 BioXR Immersive Lab - UPCH</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script src="../funciones.js"></script>
+<div class="crt-effect"></div>
+<div class="scanlines"></div>
+<header class="site-header">
+<div class="container header-inner">
+<div class="logo-section">
+<div class="logo-glitch">
+<img alt="Logo BioXR Immersive Lab" class="logo" src="https://www.image2url.com/r2/default/images/1784958107487-c54f9db7-3e44-4b59-bb7e-c1c66c2cec53.jpg"/>
+</div>
+<div class="logo-glitch">
+<img alt="Logo Universidad Peruana Cayetano Heredia" class="logo logo-upch" src="https://www.image2url.com/r2/default/images/1784958036570-fd8028b6-da82-412a-966a-4b949d5b0730.jpg"/>
+</div>
+<div class="logo-text">
+<h1 class="retro-title">BioXR Immersive Lab – Universidad Peruana Cayetano Heredia</h1>
+</div>
+</div>
+<div aria-label="Selector de idioma" class="language-switcher"><span aria-hidden="true" class="language-icon">🌐</span><span class="language-active">ES</span><span class="language-separator">|</span><a aria-label="View this project in English" href="proyecto-20-en.html" lang="en">EN</a></div></div>
+</header>
+<section class="detail-hero">
+<div class="container">
+<a class="back-link" href="../index.html#proyectos">← Volver a Proyectos</a>
+<div class="badge-row">
+<span class="category-badge" style="color:#f5fa6d; border-color:#f5fa6d; background:#f5fa6d22;">Instrumentación Biomédica</span>
+<span class="status-badge">🔧 En Desarrollo</span>
+</div>
+<h2 class="detail-title">BYMAX — Vigilancia Domiciliaria para Adultos Mayores con IRA</h2>
+</div>
+</section>
+<section class="detail-section">
+<div class="container">
+<h3>Descripción</h3>
+<p>Las infecciones respiratorias agudas (IRA) constituyen un importante problema de salud pública debido a su alta incidencia y al riesgo de progresión hacia complicaciones respiratorias en adultos mayores: 1.33 millones de casos a nivel nacional en 2025, de los cuales el 27.9% corresponde a adultos mayores de 60 años. En la región Loreto, el acceso limitado a los establecimientos de salud dificulta el monitoreo domiciliario periódico de estos pacientes, retrasando la detección temprana de signos de deterioro clínico y, en consecuencia, la intervención médica oportuna.</p>
+<p>Se propone desarrollar un dispositivo compacto (20×10×10 cm, impreso en PLA) que permita monitorear el estado de salud de adultos mayores con IRA en zonas de difícil acceso de Loreto. El sistema mide ECG, SpO2, PPG y temperatura corporal mediante el módulo HealthyPi 5, transmite los datos vía Bluetooth a una app móvil para visualización en tiempo real e historial, y gestiona alertas mediante LED RGB y buzzer cuando detecta signos de deterioro respecto a la línea basal del paciente.</p>
+</div>
+</section>
+<section class="detail-section dark-section">
+<div class="container">
+<h3>Objetivos</h3>
+<ul class="objetivos-list">
+<li>Monitorear ECG, SpO2, PPG y temperatura corporal mediante el módulo HealthyPi 5.</li>
+<li>Transmitir los datos vía BLE a un ESP32 que gestiona alertas y compara con la línea basal del paciente.</li>
+<li>Visualizar señales fisiológicas en tiempo real y el historial mediante una app móvil conectada por Bluetooth.</li>
+<li>Cumplir normativas de seguridad eléctrica (IEC 60601), usabilidad (IEC 62366-1), ciberseguridad (IEC 81001-5-1) y gestión de riesgo (ISO 14971, ISO 13485).</li>
+</ul>
+</div>
+</section>
+<section class="detail-section">
+<div class="container">
+<h3>Tecnología</h3>
+<div class="tech-grid">
+<div class="tech-box">
+<h4>🖥️ Hardware</h4>
+<p>HealthyPi 5 (AFE4400 PPG/SpO2, MAX30205 temperatura, MAX30001 ECG/Respiración), ESP32, sensor AHT10, PCB personalizada (alimentación, step-up, carga USB-C), carcasa impresa en 3D (PLA).</p>
+</div>
+<div class="tech-box">
+<h4>⚙️ Software</h4>
+<p>Firmware ESP32 (algoritmo de tendencia, gestión de alertas) + aplicativo móvil con conexión Bluetooth y almacenamiento de historial en la nube.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="detail-section dark-section">
+<div class="container">
+<h3>Equipo</h3>
+<div class="team-grid">
+<div class="team-chip">Gloria Cecilia Palma Araujo</div>
+<div class="team-chip">Yandra Melissa Purisaca Tesen</div>
+<div class="team-chip">Pamela Nicole Vilchez Cotrina</div>
+<div class="team-chip">Andree Pascale Merino Contreras</div>
+<div class="team-chip">Sebastian Alberto Norabuena Vicencio</div>
+<div class="team-chip">Allen Stirs Chavez Rivas</div>
+</div>
+</div>
+</section>
+<footer class="site-footer">
+<div class="container">
+<div class="footer-content">
+<div class="footer-logo">
+<div>
+<h4 class="retro-subtitle">BioXR Immersive Lab</h4>
+<p class="retro-text">Universidad Peruana Cayetano Heredia</p>
+</div>
+</div>
+<div class="footer-info">
+<p class="retro-text">© 2025 BioXR Immersive Lab - UPCH</p>
+</div>
+</div>
+</div>
+</footer>
+<script src="../funciones.js"></script>
 </body>
 </html>
