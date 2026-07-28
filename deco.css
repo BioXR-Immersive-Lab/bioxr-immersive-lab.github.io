@@ -872,3 +872,63 @@ body.header-reducido {
         max-width: 220px;
     }
 }
+
+
+/* =====================================================
+   SELECTOR DE IDIOMA / LANGUAGE SWITCHER
+===================================================== */
+.language-switcher {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    margin-left: 14px;
+    padding: 7px 10px;
+    border: 1px solid rgba(104, 212, 242, 0.35);
+    border-radius: 8px;
+    background: rgba(104, 212, 242, 0.05);
+    color: var(--blanco);
+    font-family: 'Courier New', monospace;
+    font-size: 0.9rem;
+    font-weight: bold;
+    white-space: nowrap;
+}
+.language-icon {
+    line-height: 1;
+}
+.language-switcher a {
+    color: var(--blanco);
+    text-decoration: none;
+    transition: color 0.25s ease, text-shadow 0.25s ease;
+}
+.language-switcher a:hover,
+.language-switcher a:focus-visible {
+    color: var(--verde-claro);
+    text-shadow: 0 0 8px var(--verde-claro);
+}
+.language-switcher a:focus-visible {
+    outline: 2px solid var(--azul-celeste);
+    outline-offset: 3px;
+    border-radius: 3px;
+}
+.language-active {
+    color: var(--azul-celeste);
+    text-shadow: 0 0 8px rgba(104, 212, 242, 0.85);
+}
+.language-separator {
+    color: var(--gris-claro);
+}
+
+@media (max-width: 1100px) {
+    .language-switcher {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .language-switcher {
+        margin: 0 auto;
+        font-size: 0.85rem;
+        padding: 6px 9px;
+    }
+}
