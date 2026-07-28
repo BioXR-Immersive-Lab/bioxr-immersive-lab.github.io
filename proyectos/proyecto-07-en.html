@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>NeuroPlan AR — Preoperative Planning in Neurosurgery – BioXR Immersive Lab</title>
+<link href="../deco.css" rel="stylesheet"/><link href="https://bioxr-immersive-lab.github.io/proyectos/proyecto-07.html" hreflang="es" rel="alternate"/><link href="https://bioxr-immersive-lab.github.io/proyectos/proyecto-07-en.html" hreflang="en" rel="alternate"/><link href="https://bioxr-immersive-lab.github.io/proyectos/proyecto-07.html" hreflang="x-default" rel="alternate"/>
+</head>
+<body>
+<div class="crt-effect"></div>
+<div class="scanlines"></div>
+<header class="site-header">
+<div class="container header-inner">
+<div class="logo-section">
+<div class="logo-glitch">
+<img alt="Logo BioXR Immersive Lab" class="logo" src="https://www.image2url.com/r2/default/images/1784958107487-c54f9db7-3e44-4b59-bb7e-c1c66c2cec53.jpg"/>
+</div>
+<div class="logo-glitch">
+<img alt="Logo Universidad Peruana Cayetano Heredia" class="logo logo-upch" src="https://www.image2url.com/r2/default/images/1784958036570-fd8028b6-da82-412a-966a-4b949d5b0730.jpg"/>
+</div>
+<div class="logo-text">
+<h1 class="retro-title">BioXR Immersive Lab – Universidad Peruana Cayetano Heredia</h1>
+</div>
+</div>
+<div aria-label="Language selector" class="language-switcher"><span aria-hidden="true" class="language-icon">🌐</span><a aria-label="Ver este proyecto en español" href="proyecto-07.html" lang="es">ES</a><span class="language-separator">|</span><span class="language-active">EN</span></div></div>
+</header>
+<section class="detail-hero">
+<div class="container">
+<a class="back-link" href="../index-en.html#proyectos">← Back to Projects</a>
+<div class="badge-row">
+<span class="category-badge" style="color:#90ee90; border-color:#90ee90; background:#90ee9022;">Surgery</span>
+<span class="status-badge">🔧 In Development</span>
+</div>
+<h2 class="detail-title">NeuroPlan AR — Preoperative Planning in Neurosurgery</h2>
+</div>
+</section>
+<section class="detail-section">
+<div class="container">
+<h3>Description</h3>
+
+
+<p>This project adapts an existing augmented-reality system—originally developed for pedicle-screw placement in spinal surgery—into a preoperative planning platform for neurosurgery. It builds on the BSD-3-Clause work by Pose-Díez-de-la-Lastra et al. published in IJCARS in 2023, replacing screw-specific logic with neurosurgical planning functions.</p><p>Using HoloLens 2, the system allows neurosurgeons to visualize 3D models of the brain, tumor, ventricles and other structures; navigate MRI images in real time; perform measurements; and plan the surgical approach. The architecture connects HoloLens 2 for holographic visualization, Unity on a PC as the central hub through Holographic Remoting, and 3D Slicer for image processing, segmentation and measurement. Unity and Slicer communicate through OpenIGTLink over TCP/IP.</p></div>
+</section>
+<section class="detail-section dark-section">
+<div class="container">
+<h3>Objectives</h3>
+<ul class="objetivos-list"><li>Visualize pre-segmented patient-specific anatomy, including the brain, tumor, ventricles, skull and vessels, with independent visibility and anatomical color coding.</li><li>Navigate 2D MRI slices in real time using a movable cutting plane and selectable sequences such as T1+Gd, T2, FLAIR and MRA.</li><li>Overlay 3D Slicer segmentations in color on MRI images displayed in HoloLens.</li><li>Display measurements including skin-to-tumor distance, tumor dimensions and volume, and distances to ventricles and critical vessels.</li><li>Allow clinicians to plan the surgical approach by drawing points directly on the 3D brain model with a virtual pen based on MRTK raycasting.</li></ul>
+</div>
+</section>
+<section class="detail-section">
+<div class="container">
+<h3>Technology</h3>
+<div class="tech-grid">
+<div class="tech-box">
+<h4>🖥️ Hardware</h4>
+<p>Microsoft HoloLens 2; Windows 10/11 PC with a dedicated GPU and at least 16 GB RAM; both devices connected to the same network, preferably 5 GHz Wi-Fi.</p>
+</div>
+<div class="tech-box">
+<h4>⚙️ Software</h4>
+<p>Unity 2021.3.9f1, MRTK 2.8.x, 3D Slicer 5.0.3 or later with SlicerIGT and OpenIGTLink extensions, Visual Studio, and Holographic Remoting Player.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="detail-section dark-section">
+<div class="container">
+<h3>Team</h3>
+<div class="team-grid">
+<div class="team-chip">Milagros Julca Jaramillo</div>
+<div class="team-chip">Adriana Merma Rosales</div>
+<div class="team-chip">Valeria Villaizan Ramirez</div>
+<div class="team-chip">Yadira Lusmar Diaz Tafur</div>
+<div class="team-chip">María Zuviate</div>
+<div class="team-chip">Diego Alessandre Murga Saavedra</div>
+</div>
+</div>
+</section>
+<footer class="site-footer">
+<div class="container">
+<div class="footer-content">
+<div class="footer-logo">
+<div>
+<h4 class="retro-subtitle">BioXR Immersive Lab</h4>
+<p class="retro-text">Universidad Peruana Cayetano Heredia</p>
+</div>
+</div>
+<div class="footer-info">
+<p class="retro-text">© 2025 BioXR Immersive Lab - UPCH</p>
+</div>
+</div>
+</div>
+</footer>
+<script src="../funciones.js"></script>
+</body>
+</html>
